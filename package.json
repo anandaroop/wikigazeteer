@@ -1,0 +1,24 @@
+{
+  "name": "wikigazeteer",
+  "version": "0.1.0",
+  "description": "Search for toponyms on Wikipedia",
+  "main": "index.js",
+  "author": "@anandaroop",
+  "license": "MIT",
+  "dependencies": {
+    "puppeteer": "^1.18.1",
+    "regenerator-runtime": "^0.13.3"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.5.5",
+    "@babel/core": "^7.5.5",
+    "@babel/node": "^7.5.5",
+    "@babel/preset-env": "^7.5.5"
+  },
+  "scripts": {
+    "build": "yarn babel src -d dist",
+    "wg": "node dist/searchMany.js",
+    "search": "yarn babel-node src/search.js",
+    "searchMany": "yarn babel-node src/searchMany.js"
+  }
+}
